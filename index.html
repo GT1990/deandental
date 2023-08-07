@@ -34,7 +34,7 @@
     <!-- TODO: -->
     <meta property="og:description" content="" />
     <meta property="og:title" content="" />
-    <meta property="og:image" content="logo.png" />
+    <meta property="og:image" content="" />
     <meta property="og:url" content="" />
 
     <!--meta for twitter -->
@@ -42,19 +42,60 @@
     <meta name="twitter:card" content="" />
     <meta name="twitter:creator" content="" />
     <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="logo.png" />
+    <meta name="twitter:image" content="" />
     <meta name="twitter:site" content="" />
     <meta name="twitter:description" content="" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="favIcon.ico" />
+    <link rel="shortcut icon" type="image/png" href="img/favIcon.ico" />
 
     <!-- Manifest for PWA -->
     <!-- TODO: what is manifest -->
     <link rel="manifest" href="manifest.json" />
     <title>Dean Dental Group | Madison, Wisconsin</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Js -->
+    <script type="module" src="js/header.js"></script>
   </head>
   <body>
-    <header></header>
+    <header-template></header-template>
+    <main>
+      <img src="img/smileBackground.jpg" />
+      <section class="hero-header-text">
+        <h1>Welcome to Dean Dental</h1>
+        <h2>
+          Discover your perfect smile at our brand-new dental office, dedicated
+          to providing top-notch care and exceptional results.
+        </h2>
+        <div class="call-to-action">
+          <a href="schedule.html" class="schedule">Schedule Appointment</a>
+          <a href="tel:+1231234567" class="call">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+            >
+              <path
+                d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.286 12.857-32.143T165-840h140q14 0 24 10t14 25l26.929 125.641Q372-665 369.5-653.5q-2.5 11.5-10.729 19.726L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.151-15T686-369l119 26q15 4 25 16.044T840-300v135q0 19.286-12.857 32.143T795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"
+              />
+            </svg>
+            <label>(123) 123-4567</label>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
