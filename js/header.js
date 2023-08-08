@@ -1,24 +1,13 @@
-let header = `
-<header class="header">
-    <div class="section1">
-      <div class="left"></div>
-      <div class="center"><a href="index.html"><img src="img/DeanDentalGroup.png" /></a></div>
-      <div class="call-to-action"><a href="schedule.html" class="schedule">Schedule appointment</a></div>
-    </div>
-    <nav>
-      <a href="dentures.html">DENTURES</a>
-      <a href="implants.html">DENTAL IMPLANTS</a>
-      <a href="mottoaligners.html">MOTTO ALIGNERS</a>
-      <a href="dental-services.html">GENERAL DENTAL SERVICES</a>
-      <a href="pricing-offers.html">COSTS & AFFORDABILITY</a>
-      <a href="dental-financing-and-insurance.html">DENTAL FINANCING AND INSURANCE</a>
-    </nav>
-  </header>`;
+let prevScrollPos = window.scrollY || window.pageYOffset;
 
-class Header extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = header;
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.scrollY || window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector(".header").style.top = "0";
+  } else {
+    document.querySelector(".header").style.top = "-300px";
   }
-}
 
-customElements.define("header-template", Header);
+  prevScrollPos = currentScrollPos;
+});

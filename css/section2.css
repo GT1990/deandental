@@ -1,0 +1,58 @@
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 100px 0px;
+}
+.section2 h1 {
+  font-size: 2.5em;
+}
+.section2 .thirds {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.section2 .thirds span {
+  width: 150px;
+  height: 150px;
+}
+.section2 .thirds img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.section2 .thirds p {
+  width: 80%;
+  text-align: center;
+}
+.section2 .thirds .left {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section2 .thirds .center {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section2 .thirds .right {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2 .thirds div:hover {
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  transition: 0.5s;
+}
