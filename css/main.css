@@ -50,7 +50,7 @@ main .hero-header-text h1 {
 .call-to-action .schedule {
   padding: 15px 30px 15px 30px;
   border-radius: 25px;
-  background-color: rgb(219, 146, 11);
+  background-color: #ffd96a;
   color: black;
 }
 .call-to-action .call {
