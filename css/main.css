@@ -1,77 +1,190 @@
-html body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-}
 
-a {
-  text-decoration: none;
-  color: inherit;
+@media (min-width: 768px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    background: none;
+    border: none;
+  }
+  /* hero */
+  
+  main {
+    width: 100vw;
+    height: 100svh;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  main img {
+    object-fit: cover;
+    object-position: 0% 0%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  main .hero-header-text {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin-left: 7%;
+    max-width: 50%;
+  }
+  main .hero-header-text h1 {
+    font-size: 3em;
+  }
+  
+  .call-to-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .call-to-action .schedule {
+    padding: 15px 30px 15px 30px;
+    border-radius: 25px;
+    background-color: #ffd96a;
+    color: black;
+  }
+  .call-to-action .call {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #022855;
+  }
+  
+  .call-to-action .call svg {
+    fill: white;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .call-to-action .call label {
+    cursor: pointer;
+  }
 }
+@media (max-width: 768px) {
+  html body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* hero */
+  
+  main {
+    width: 100vw;
+    height: 100svh;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  main img {
+    object-fit: cover;
+    object-position: 80% 0%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  main .hero-header-text {  
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 100vw;
+    top: 25vh;
+    bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  main .hero-header-text h1 {
+    font-size: 2.5em;
+    padding: 0px 18%;
+  } main .hero-header-text h2 {
+    font-size: 1.25em;
+    padding: 0px 15%;
+  }
+  
+  .call-to-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+  }
 
-/* hero */
-
-main {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-main img {
-  object-fit: cover;
-  object-position: 0% 0%;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-main .hero-header-text {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  margin-left: 7%;
-  max-width: 50%;
-}
-main .hero-header-text h1 {
-  font-size: 3em;
-}
-
-.call-to-action {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.call-to-action .schedule {
-  padding: 15px 30px 15px 30px;
-  border-radius: 25px;
-  background-color: #ffd96a;
-  color: black;
-}
-.call-to-action .call {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 25px;
-  padding: 15px 30px 15px 30px;
-  cursor: pointer;
-  border-radius: 25px;
-  background-color: #022855;
-}
-
-.call-to-action .call svg {
-  fill: white;
-  height: 25px;
-  width: 25px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.call-to-action .call label {
-  cursor: pointer;
+   main .call-to-action .call  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #022855;
+    box-sizing: border-box;
+    width: calc(50vw - 20px);
+    height: 100px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+  }
+  main .call-to-action .schedule  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;background-color: #ffd96a;
+    color: black;
+    box-sizing: border-box;
+    width: calc(50vw - 20px);
+    height: 100px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+  }
+  .call-to-action .call svg {
+    fill: white;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .call-to-action .call label {
+    cursor: pointer;
+  }
 }

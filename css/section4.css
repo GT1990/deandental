@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
 .section4 {
   width: 100vw;
   display: flex;
@@ -69,3 +70,82 @@
   top: 10px;
   left: 10px;
 }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .section4 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+  .section4 h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    z-index: 1;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0px 50px;
+  }
+  .section4 .reviews {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section4 .reviews div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 50px 10px;
+    border-radius: 40px 0px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .section4 .stars {
+    margin-top: 50px;
+  }
+  .section4 div p {
+    margin: 25px;
+    text-indent: 25px;
+  }
+  .section4 div .reviewLocation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .section4 .reviews > :nth-child(1) {
+    background-color: #6fbdb0;
+  }
+  .section4 .reviews > :nth-child(2) {
+    background-color: #b7c6a5;
+  }
+  .section4 .reviews > :nth-child(3) {
+    background-color: #a2c0fc;
+  }
+  .section4 .reviews > :nth-child(4) {
+    background-color: #c9b3e6;
+  }
+  
+  .section4 .quoteIcon {
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  }

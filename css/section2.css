@@ -1,4 +1,7 @@
-.section2 {
+
+@media (min-width: 768px) {
+  .section2 {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,4 +58,77 @@
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
   transition: 0.5s;
+}
+}
+@media (max-width: 768px)  {
+  .section2 {
+  min-height: 100svh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 5% 100px 5%;
+  box-sizing: border-box;
+}
+.section2 h1 {
+  font-size: 2.5em;
+  text-align: center;
+}.section2 h3 {
+  font-size: 1.25em;
+  text-align: center;
+  width: 100%;
+}
+.section2 .thirds {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.section2 .thirds span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section2 .thirds div{
+  padding: 25px 0px;
+}
+.section2 .thirds div:nth-of-type(odd){
+  background-color: rgb(234, 234, 234, .25);
+}
+.section2 .thirds img {
+  object-fit: cover;
+  width: 25%;
+  height: 25%;
+  z-index: 0;
+}
+.section2 .thirds p {
+  width: 80%;
+  text-align: center;
+}
+.section2 .thirds .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section2 .thirds .center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section2 .thirds .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 }

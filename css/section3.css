@@ -1,56 +1,62 @@
-.section3 {
+
+@media (min-width: 768px) {
+  .section3 {
+  height: 100vh;
+  overflow: hidden;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #3a689f;
-  padding: 50px 0px 250px 0px;
+  padding: 50px 0px 0px 0px;
+  margin: 0;
   color: white;
   position: relative;
 }
 
 .section3 h1 {
+  position: absolute;
+  top: 15vh;
   font-size: 2.5em;
   z-index: 1;
-  margin-bottom: 100px;
-  height: 100px;
 }
-.section3 div {
+.section3 .services {
   width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 50px;
   z-index: 1;
   position: absolute;
-  bottom: 50px;
+  bottom: 15vh;
+  flex-wrap: wrap;
 }
-.section3 div a {
+.section3 .services a {
   background-color: rgb(255, 255, 255);
   color: #063267;
   width: 25%;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 40px;
   height: 70px;
   position: relative;
 }
-.section3 div a img {
+.section3 .services a img {
   height: 90%;
   margin-left: 10px;
   cursor: pointer;
 }
-.section3 div a label {
+.section3 .services a label {
   margin-left: 10px;
   cursor: pointer;
 }
-.section3 div a:hover .material-symbols-outlined {
+.section3 .services a:hover .material-symbols-outlined {
   right: 10px;
   transition: 0.5s;
 }
@@ -61,12 +67,25 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.section3 svg {
+.svg-container {
+  width: 100vw; 
+  height: 100vh;
+  display: flex;
+  align-items:  flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
   position: absolute;
   bottom: 0;
   z-index: 0;
-  transform: scale(1.3);
 }
+
+.svg-content {
+  width: 100%;
+  height: 100%; 
+  z-index: 0;
+  transform: translateY(100px);
+}
+
 @keyframes pulsate {
   0%,
   100% {
@@ -75,4 +94,103 @@
   50% {
     transform: scale(1.2);
   }
+}
+}
+
+@media (max-width: 768px) {
+  .section3 {
+  min-height: 110vh;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a689f;
+  padding: 50px 0px 0px 0px;
+  margin: 0;
+  color: white;
+  position: relative;
+}
+
+.section3 h1 {
+  position: absolute;
+  width: 95%;
+  top: 5vh;
+  font-size: 2.5em;
+  z-index: 1;
+  text-align: center;
+}
+.section3 .services {
+  min-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top:35vh;
+  flex-wrap: wrap;
+}
+.section3 .services a {
+  background-color: rgb(255, 255, 255);
+  color: #063267;
+  width: 80%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  height: 70px;
+  position: relative;
+}
+.section3 .services a img {
+  height: 90%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.section3 .services a label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.section3 .material-symbols-outlined {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.svg-container {
+  width: 100vw; 
+  height: 100vh;
+  display: flex;
+  align-items:  flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: absolute;
+  bottom: -10px;
+  z-index: 0;
+  transform: scale(4);
+}
+
+.svg-content {
+  width: 100%;
+  height: 100%; 
+  z-index: 0;
+  transform: translateY(30px);
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
 }

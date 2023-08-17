@@ -1,13 +1,16 @@
-.header {
+@media (min-width: 768px) { 
+  .mobile {
+    display: none;
+  }
+  .header {
   position: fixed;
   top: 0;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
   background-color: #f3f3f3;
   z-index: 10;
   transition: 0.7s;
+  
 }
 
 .header .section1 {
@@ -60,4 +63,117 @@
 }
 .header nav a:hover {
   border-color: rgb(176, 176, 176);
+}
+}
+@media (max-width: 768px) { 
+  .desktop {
+    display: none;
+  }   .header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 100vw;
+    background-color: #f3f3f3;
+    z-index: 10;
+    transition: 0.7s;
+    border-bottom: 10px solid #063267;
+  }
+  .logoContainer{
+    position: absolute;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    background-color: #f3f3f3;
+  } 
+  .logoContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+  .logoContainer a img {
+    height: auto;
+    width: 100%;
+  }
+
+  .toggle-menu {
+    display: block;
+    position: relative;
+    padding: 1.5rem;
+    width: 20%;
+    height: 80px;
+    text-indent: -999em;
+    cursor: pointer;
+    z-index: 10;
+    box-sizing: border-box;
+  }
+  
+  .toggle-menu--clicked {
+    
+    .menu__bar {
+      
+      &:nth-child(1) {
+        top: 2.25rem;
+        transform: rotate(45deg);
+      }
+      
+      &:nth-child(2) {
+        transform: translateX(100%) scale(0);
+      }
+      
+      &:nth-child(3) {
+        top: 2.25rem;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  .menu__bar {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    width: 3rem;
+    height: .25rem;
+    transition: top .4s ease-out, transform .4s ease-out;
+    background-color: #69829F;
+    
+    &:nth-child(1) {
+      top: 1.5;
+    }
+    
+    &:nth-child(2) {
+      top: 2.5rem;
+    }
+    
+    &:nth-child(3) {
+      top: 3.5rem;
+    }
+  }
+
+  .dropDown {
+    display: flex;
+    flex-direction: column;
+    background-color: #063267;
+    color: white;
+    padding: 50px;
+    height: calc(100vh - 90px);
+    position: fixed;
+    top: 90px;
+    width: 100vw;
+    z-index: 1;
+    transition: 0.5s;
+    top: -1000px;
+    padding-top: 80px;
+  }
+
+  .dropDown a {
+    margin: 7% 0px;
+  }
 }
