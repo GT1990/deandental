@@ -77,53 +77,11 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="desktop"><div class="section1">
-        <div class="left"></div>
-        <div class="center">
-          <a href="index.html"><img src="img/DeanDentalLogo_1.png" /></a>
-        </div>
-        <div class="call-to-action">
-          <a href="schedule.html" class="schedule">Schedule appointment</a>
-        </div>
-      </div>
-      <nav>
-        <a href="dentures.html">DENTURES</a>
-        <a href="implants.html">DENTAL IMPLANTS</a>
-        <a href="mottoaligners.html">MOTTO ALIGNERS</a>
-        <a href="dental-services.html">GENERAL DENTAL SERVICES</a>
-        <a href="pricing-offers.html">COSTS & AFFORDABILITY</a>
-        <a href="dental-financing-and-insurance.html"
-          >DENTAL FINANCING AND INSURANCE</a
-        >
-      </nav></div>
-      <div class="mobile">
-        <div class="logoContainer">
-          <a href="index.html">
-            <img src="img/DeanDentalLogo_1.png" />
-          </a>
-          <div class="toggle-menu" data-toggle-menu>
-            <span class="menu__bar"></span>
-            <span class="menu__bar"></span>
-            <span class="menu__bar"></span>
-          </div>
-        </div>
-      </div>
-      <nav class="dropDown">
-        <a href="dentures.html">DENTURES</a>
-        <a href="implants.html">DENTAL IMPLANTS</a>
-        <a href="mottoaligners.html">MOTTO ALIGNERS</a>
-        <a href="dental-services.html">GENERAL DENTAL SERVICES</a>
-        <a href="pricing-offers.html">COSTS & AFFORDABILITY</a>
-        <a href="dental-financing-and-insurance.html"
-          >DENTAL FINANCING AND INSURANCE</a
-        >
-      </nav>
-    </header>
     
-
-    <main >
+    <!-- Header -->
+    <?php include 'header.php';?>
+    <!-- section 1 - Main -->
+    <main>
       <img src="img/smileBackground.jpg" />
       <section class="hero-header-text">
         <h1>Welcome to Dean Dental</h1>
@@ -150,6 +108,7 @@
         </div>
       </section>
     </main>
+    <!-- section2 -->
     <section class="section2">
       <h1>Partner with us for your dental care needs</h1>
       <h3>
@@ -186,12 +145,13 @@
           ><span class="material-symbols-outlined">
             keyboard_arrow_right
           </span></a
-        > <a href=""
-        ><img src="img/icons/crownIcon.png" /><label>Crowns</label
-        ><span class="material-symbols-outlined">
-          keyboard_arrow_right
-        </span></a
-      >
+        >
+        <a href=""
+          ><img src="img/icons/crownIcon.png" /><label>Crowns</label
+          ><span class="material-symbols-outlined">
+            keyboard_arrow_right
+          </span></a
+        >
 
         <a href=""
           ><img src="img/icons/dentalImplantIcon.png" /><label
@@ -216,20 +176,18 @@
         >
       </div>
       <div class="svg-container">
-       <svg class="svg-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600">
-    <path
-        fill="#063267"
-        fill-opacity="1"
-        d="M0,32L60,58.7C120,85,240,139,360,138.7C480,139,600,85,720,64C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,600L1380,600C1320,600,1200,600,1080,600C960,600,840,600,720,600C600,600,480,600,360,600C240,600,120,600,60,600L0,600Z"
-    ></path>
-</svg>
-    </div>
-
-
-
-
-
-
+        <svg
+          class="svg-content"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 600"
+        >
+          <path
+            fill="#063267"
+            fill-opacity="1"
+            d="M0,32L60,58.7C120,85,240,139,360,138.7C480,139,600,85,720,64C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,600L1380,600C1320,600,1200,600,1080,600C960,600,840,600,720,600C600,600,480,600,360,600C240,600,120,600,60,600L0,600Z"
+          ></path>
+        </svg>
+      </div>
     </section>
     <!-- section4 - our 5 star reviews -->
     <section class="section4">
@@ -319,6 +277,10 @@
       <a href="schedule.html" class="schedule">Schedule appointment</a>
       <img src="img/dentalPatient.jpg" />
     </section>
+    <!-- Google Maps -->
+    <?php
+include('components/google-maps.php');
+?>
   </body>
 </html>
 
